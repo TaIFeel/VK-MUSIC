@@ -11,7 +11,7 @@ try:
     info = get_kate_token(login, password)
 
 except Exception as exc:
-    if exc.extrat["error"] == "need_validation":
+    if exc.extra["error"] == "need_validation":
         code = input("SMS CODE: >>> ")
 
     info = get_kate_token(login, password, code)
